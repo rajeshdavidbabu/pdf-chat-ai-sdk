@@ -49,7 +49,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`         | Starts the local dev server at `localhost:3000` |
 
 ## 🚸 Roadmap
-- ✅ Add sources to the streamed chat bubble
+- 🚧 Add sources to the streamed chat bubble
 - 🚧 Clean up and show proper error messages
 - 🚧 Sanitize input and output source documents
 
