@@ -24,6 +24,7 @@ https://github.com/rajeshdavidbabu/pdf-chat-ai-sdk/assets/15684795/6e97864c-ea2f
 
 Built with:
 - ✅ Next.js 13
+- ✅ Vercel's AI SDK
 - ✅ Shadcn-ui
 - ✅ Langchain TypeScript integration
 - ✅ PineconeDB as the knowledge store
