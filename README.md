@@ -1,16 +1,16 @@
 # PDF-CHAT AI ✨🤖💻🗃️
 
-An AI-powered PDF chat built with Next.js 13, Langchain, and PineconeDB
+An AI-powered PDF chat built with Next.js 13, Vercel's AI SDK, Langchain, and PineconeDB
 
 ## 👷🏾‍♂️ Want to Learn How to Build It?
 Subscribe to my [YouTube Channel](https://www.youtube.com/channel/UCU2xH1a0ExxWXC4zk1VF_Eg) for an upcoming video tutorial!
 
-## ✨Update✨
-Added sources to the stream and displaying it in an accordian
 
 
 
-https://github.com/rajeshdavidbabu/pdf-chat-ai/assets/15684795/feb5331d-b43d-4778-a8dd-630d6f361197
+
+
+https://github.com/rajeshdavidbabu/pdf-chat-ai-sdk/assets/15684795/6e97864c-ea2f-4a1b-991f-21e6c34f1214
 
 
 
