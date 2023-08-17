@@ -32,10 +32,12 @@ function makeChain(vectorstore: PineconeStore) {
     modelName: "gpt-3.5-turbo",
     streaming: true,
     verbose: true,
+    temperature: 0,
   });
   const nonStreamingModel = new ChatOpenAI({
     modelName: "gpt-3.5-turbo",
     verbose: true,
+    temperature: 0,
   });
 
   const chain = ConversationalRetrievalQAChain.fromLLM(
