@@ -17,7 +17,8 @@ https://github.com/rajeshdavidbabu/pdf-chat-ai-sdk/assets/15684795/6e97864c-ea2f
 
 
 ## Architecture
-<img width="1275" alt="Screenshot 2023-08-14 at 12 11 05" src="https://github.com/rajeshdavidbabu/pdf-chat-ai/assets/15684795/a2142d39-ec97-410f-89dc-907e25524fad">
+
+<img width="1402" alt="Embed LLM" src="https://github.com/rajeshdavidbabu/pdf-chat-ai-sdk/assets/15684795/b1252438-f5b3-4df3-aecc-245553006a60">
 
 
 ## 👩‍🚀 Description
