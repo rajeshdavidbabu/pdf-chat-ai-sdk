@@ -1,22 +1,12 @@
 "use client";
 
-import { scrollToBottom } from "@/lib/utils";
+import { scrollToBottom, initialMessages } from "@/lib/utils";
 import { ChatLine } from "./chat-line";
 import { useChat, Message } from "ai/react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Spinner } from "./ui/spinner";
 import { useEffect, useRef } from "react";
-
-// Default UI Message
-export const initialMessages: Message[] = [
-  {
-    role: "assistant",
-    id: "0",
-    content:
-      "Hi! I am your PDF assistant. I am happy to help with your questions about - The Great Gatsby",
-  },
-];
 
 export function Chat() {
   const containerRef = useRef<HTMLDivElement | null>(null);

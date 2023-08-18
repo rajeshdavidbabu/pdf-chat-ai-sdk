@@ -1,4 +1,5 @@
 import { ChatGPTMessage } from "@/types";
+import { Message } from "ai";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -33,21 +34,12 @@ export const formatChatHistory = (chatHistory: [string, string][]) => {
   return formattedDialogueTurns.join("\n");
 };
 
-export function sanitizeAndFormatText(inputText: string) {
-  // Replace newline characters and hyphens with spaces
-  let formattedText = inputText.replace(/[\n-]/g, " ");
-
-  // Remove consecutive spaces
-  formattedText = formattedText.replace(/\s+/g, " ");
-
-  return formattedText;
-}
-
 // Default UI Message
-export const initialMessage: ChatGPTMessage[] = [
+export const initialMessages: Message[] = [
   {
     role: "assistant",
+    id: "0",
     content:
-      "Hi! I am your PDF assistant. Please load your pdf data into my knowledge store using the command `npm run prepare:data`. Once done you can ask any question about it !! ",
+      "Hi! I am your PDF assistant. I am happy to help with your questions about your PDF.",
   },
 ];

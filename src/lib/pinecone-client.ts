@@ -4,6 +4,7 @@ import { delay } from "./utils";
 
 let pineconeClientInstance: PineconeClient | null = null;
 
+// Create pineconeIndex if it doesn't exist
 async function createIndex(client: PineconeClient, indexName: string) {
   try {
     await client.createIndex({
@@ -24,6 +25,7 @@ async function createIndex(client: PineconeClient, indexName: string) {
   }
 }
 
+// Initialize index and ready to be accessed.
 async function initPineconeClient() {
   try {
     const pineconeClient = new PineconeClient();

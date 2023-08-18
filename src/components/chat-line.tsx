@@ -2,7 +2,6 @@ import Balancer from "react-wrap-balancer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Message } from "ai/react";
 
-// util helper to convert new lines to <br /> tags
 const convertNewLines = (text: string) =>
   text.split("\n").map((line, i) => (
     <span key={i}>

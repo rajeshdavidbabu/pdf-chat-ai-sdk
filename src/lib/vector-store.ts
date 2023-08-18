@@ -3,7 +3,7 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { PineconeClient } from "@pinecone-database/pinecone";
 
-export async function pineconeEmbedAndStore(
+export async function embedAndStoreDocs(
   client: PineconeClient,
   // @ts-ignore docs type error
   docs: Document<Record<string, any>>[]
@@ -25,6 +25,7 @@ export async function pineconeEmbedAndStore(
   }
 }
 
+// Returns vector-store handle to be used a retrievers on langchains
 export async function getVectorStore(client: PineconeClient) {
   try {
     const embeddings = new OpenAIEmbeddings();
