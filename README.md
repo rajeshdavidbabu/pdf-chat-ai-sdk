@@ -10,7 +10,11 @@ Subscribe to my [YouTube Channel](https://www.youtube.com/channel/UCU2xH1a0ExxWX
 
 
 
-https://github.com/rajeshdavidbabu/pdf-chat-ai-sdk/assets/15684795/6e97864c-ea2f-4a1b-991f-21e6c34f1214
+https://github.com/rajeshdavidbabu/pdf-chat-ai-sdk/assets/15684795/0b2a1c85-c58d-43a0-b362-80bdf5a5d7ee
+
+
+
+
 
 
 
@@ -51,7 +55,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`         | Starts the local dev server at `localhost:3000` |
 
 ## 🚸 Roadmap
-- 🚧 Add sources to the streamed chat bubble
+- ✅ Add sources to the streamed chat bubble
 - 🚧 Clean up and show proper error messages
 - 🚧 Sanitize input and output source documents
 
