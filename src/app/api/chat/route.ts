@@ -10,7 +10,8 @@ const formatMessage = (message: Message) => {
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const messages = body.messages ?? [];
+  const messages: Message[] = body.messages ?? [];
+  console.log("Messages ", messages);
   const formattedPreviousMessages = messages.slice(0, -1).map(formatMessage);
   const question = messages[messages.length - 1].content;
 

@@ -21,6 +21,7 @@
     "@types/react": "18.2.19",
     "@types/react-dom": "18.2.7",
     "ai": "^2.1.34",
+    "ai-stream-experimental": "^2.2.2",
     "autoprefixer": "10.4.14",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",

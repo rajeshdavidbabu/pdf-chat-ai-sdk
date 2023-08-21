@@ -34,6 +34,13 @@ export const formatChatHistory = (chatHistory: [string, string][]) => {
   return formattedDialogueTurns.join("\n");
 };
 
+export function formattedText(inputText: string) {
+  return inputText
+    .replace(/\n+/g, " ") // Replace multiple consecutive new lines with a single space
+    .replace(/(\w) - (\w)/g, "$1$2") // Join hyphenated words together
+    .replace(/\s+/g, " "); // Replace multiple consecutive spaces with a single space
+}
+
 // Default UI Message
 export const initialMessages: Message[] = [
   {
@@ -43,3 +50,18 @@ export const initialMessages: Message[] = [
       "Hi! I am your PDF assistant. I am happy to help with your questions about your PDF about German law.",
   },
 ];
+
+interface Data {
+  sources: string[];
+}
+
+// Maps the sources with the right ai-message
+export const getSources = (data: Data[], role: string, index: number) => {
+  if (role === "assistant" && index >= 2 && (index - 2) % 2 === 0) {
+    const sourcesIndex = (index - 2) / 2;
+    if (data[sourcesIndex] && data[sourcesIndex].sources) {
+      return data[sourcesIndex].sources;
+    }
+  }
+  return [];
+};
