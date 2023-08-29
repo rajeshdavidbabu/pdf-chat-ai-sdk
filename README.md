@@ -3,7 +3,7 @@
 An AI-powered PDF chat built with Next.js 13, Vercel's AI SDK, Langchain, and PineconeDB
 
 ## 👷🏾‍♂️ Want to Learn How to Build It?
-Check out the tutorial on my YT channel [tutorial](https://www.youtube.com/watch?v=oiCFr19NtPo&t)
+Check out the tutorial on my YT [channel](https://www.youtube.com/watch?v=oiCFr19NtPo&t)
 
 
 
