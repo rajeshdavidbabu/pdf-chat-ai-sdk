@@ -1,7 +1,7 @@
-import { env } from "./config";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { PineconeStore } from "langchain/vectorstores/pinecone";
-import { PineconeClient } from "@pinecone-database/pinecone";
+import { env } from './config';
+import { OpenAIEmbeddings } from 'langchain/embeddings/openai';
+import { PineconeStore } from 'langchain/vectorstores/pinecone';
+import { PineconeClient } from '@pinecone-database/pinecone';
 
 export async function embedAndStoreDocs(
   client: PineconeClient,
@@ -16,12 +16,11 @@ export async function embedAndStoreDocs(
     //embed the PDF documents
     await PineconeStore.fromDocuments(docs, embeddings, {
       pineconeIndex: index,
-      namespace: env.PINECONE_NAME_SPACE,
-      textKey: "text",
+      textKey: 'text',
     });
   } catch (error) {
-    console.log("error ", error);
-    throw new Error("Failed to load your docs !");
+    console.log('error ', error);
+    throw new Error('Failed to load your docs !');
   }
 }
 
@@ -33,13 +32,12 @@ export async function getVectorStore(client: PineconeClient) {
 
     const vectorStore = await PineconeStore.fromExistingIndex(embeddings, {
       pineconeIndex: index,
-      textKey: "text",
-      namespace: env.PINECONE_NAME_SPACE,
+      textKey: 'text',
     });
 
     return vectorStore;
   } catch (error) {
-    console.log("error ", error);
-    throw new Error("Something went wrong while getting vector store !");
+    console.log('error ', error);
+    throw new Error('Something went wrong while getting vector store !');
   }
 }
